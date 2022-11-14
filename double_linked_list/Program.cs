@@ -61,7 +61,11 @@ namespace double_linked_list
             Node previous, current;
             for (current = previous = START; current != null && nim >= current.noMhs; previous = current, current = current.next)
             {
-               
+               if (nim == current.noMhs)
+                {
+                    Console.WriteLine("\nDulicate roll numbers not allowed");
+                    return;
+                }
             }
         }
     }
