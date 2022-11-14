@@ -109,7 +109,10 @@ namespace double_linked_list
         }
         public bool listEmpty()
         {
-
+            if (START == null)
+                return true;
+            else
+                return false;
         }
     }
     class Program
