@@ -216,6 +216,8 @@ namespace double_linked_list
                                 }
                             }
                             break;
+                        case '6':
+                            return;
                     }
                 }
             }
