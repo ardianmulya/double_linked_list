@@ -88,7 +88,8 @@ namespace double_linked_list
         {
             Node previous, current;
             previous = current = null;
-
+            if (search(rollno, ref previous, ref current) == false)
+                return false;
         }
     }
     class Program
