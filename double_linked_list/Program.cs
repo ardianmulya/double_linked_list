@@ -90,6 +90,11 @@ namespace double_linked_list
             previous = current = null;
             if (search(rollno, ref previous, ref current) == false)
                 return false;
+            if (current.next == null)
+            {
+                previous.next = null;
+                return true;
+            }
         }
     }
     class Program
