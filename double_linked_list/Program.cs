@@ -218,6 +218,11 @@ namespace double_linked_list
                             break;
                         case '6':
                             return;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid option");
+                            }
+                            break;
                     }
                 }
             }
