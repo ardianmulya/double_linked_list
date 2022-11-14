@@ -86,6 +86,8 @@ namespace double_linked_list
         }
         public bool dellNode(int rollno)
         {
+            Node previous, current;
+            previous = current = null;
 
         }
     }
