@@ -30,7 +30,10 @@ namespace double_linked_list
         {
             START = null;
         }
+        public void addNode()
+        {
 
+        }
     }
     class Program
     {
