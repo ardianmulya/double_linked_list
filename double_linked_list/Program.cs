@@ -69,6 +69,15 @@ namespace double_linked_list
             }
             newNode.next = current;
             newNode.prev = previous;
+
+            if (current == null)
+            {
+                newNode.next = null;
+                previous.next = newNode;
+                return;
+            }
+            current.prev = newNode;
+            previous.next = newNode;
         }
     }
     class Program
