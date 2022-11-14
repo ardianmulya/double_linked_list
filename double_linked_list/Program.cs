@@ -38,9 +38,25 @@ namespace double_linked_list
             nim = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\nEnter the name of the student");
             nm = Console.ReadLine();
-            Node newnode = new Node();
-            newnode.noMhs = nim;
-            newnode.name = nm;
+            Node newNode = new Node();
+            newNode.noMhs = nim;
+            newNode.name = nm;
+
+            //check if the list empty
+            if (START == null || nim <= START.noMhs)
+            {
+                if((START!=null)&&(nim== START.noMhs))
+                {
+                    Console.WriteLine("\nDulpicate number not allowed");
+                    return;
+                }
+                newNode.next = START;
+                if (START !=null)
+                    START.prev = newNode;
+                newNode.prev = null;
+                START = newNode;
+                return;
+            }
         }
     }
     class Program
