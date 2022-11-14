@@ -129,7 +129,8 @@ namespace double_linked_list
         }
         public void descending()
         {
-
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
         }
     }
     class Program
