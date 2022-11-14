@@ -84,6 +84,10 @@ namespace double_linked_list
             for (previous = current = START; current != null && rollno != current.noMhs; previous = current, current = current.next) { }
             return (current != null);
         }
+        public bool dellNode(int rollno)
+        {
+
+        }
     }
     class Program
     {
