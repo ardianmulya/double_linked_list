@@ -32,7 +32,8 @@ namespace double_linked_list
         }
         public void addNode()
         {
-
+            int nim;
+            string nm;
         }
     }
     class Program
