@@ -95,6 +95,17 @@ namespace double_linked_list
                 previous.next = null;
                 return true;
             }
+
+            if (current == START)
+            {
+                START = START.next;
+                if (START != null)
+                    START.prev = null;
+                return true;
+            }
+            previous.next = current.next;
+            current.next.prev = previous;
+            return true;
         }
     }
     class Program
